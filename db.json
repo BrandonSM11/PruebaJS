@@ -13,6 +13,20 @@
       "email": "brandon@gmail.com",
       "password": "brandon123",
       "role": "visitor"
+    },
+    {
+      "id": "a552",
+      "name": "carolina",
+      "email": "carolina@gmail.com",
+      "password": "caro1234",
+      "role": "visitor"
+    },
+    {
+      "id": "7047",
+      "name": "isabella",
+      "email": "isabella@gmail.com",
+      "password": "isa1234",
+      "role": "admin"
     }
   ],
   "events": [

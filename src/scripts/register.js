@@ -1,7 +1,7 @@
 const user = JSON.parse(localStorage.getItem("user"));
     if (user) window.location.href = "/public/dashboard/index.html";
 
-registerForm = document.getElementById('registerForm');
+const form = document.getElementById('registerForm');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
