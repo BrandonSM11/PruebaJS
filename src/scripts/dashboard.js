@@ -3,6 +3,8 @@ if (!user) {
 window.location.href = "/public/not-found/index.html";
 }
 document.getElementById("userName").textContent = user.name;
+document.getElementById("sidebarUserName").textContent = user.name;
+document.getElementById("sidebarRoles").textContent = user.role
 const eventosContainer = document.getElementById("eventos");
 const btnCrear = document.getElementById("btnCrear");
 if (user.role === "admin") {
@@ -12,6 +14,10 @@ window.location.href = "/public/dashboard/events/create.html";
 });
 }
 document.getElementById("logout").addEventListener("click", () => {
+localStorage.removeItem("user");
+window.location.href = "/public/auth/login.html";
+});
+document.getElementById("logoutSidebar").addEventListener("click", () => {
 localStorage.removeItem("user");
 window.location.href = "/public/auth/login.html";
 });
@@ -35,8 +41,8 @@ data-id="${ev.id}">Registrarse</button>
 `}
 </div>
 </div>
-`).join("");
-}window.editar = (id) => {
+`).join("");}
+window.editar = (id) => {
 window.location.href = `/public/dashboard/events/edit.html?id=${id}`;
 };
 window.eliminar = async (id) => {
@@ -73,8 +79,8 @@ mostrarEventosInscrito(user.id);
 async function mostrarEventosInscrito(userId) {
 const res = await fetch("http://localhost:3000/events");
 const eventos = await res.json();
-const inscritos = eventos.filter(ev => ev.attendees?.includes(userId));
-const lista = inscritos.map(ev => `<li>${ev.title} - ${ev.location}</li>`).join("");document.getElementById("misEventos").innerHTML = `
+const inscritos = eventos.filter(ev => ev.attendees?.includes(userId));const lista = inscritos.map(ev => `<li>${ev.title} - ${ev.location}</li>`).join("");
+document.getElementById("misEventos").innerHTML = `
 <h5>Tus eventos registrados:</h5>
 <ul>${lista}</ul>
 `;
