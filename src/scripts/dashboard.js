@@ -82,4 +82,4 @@ const lista = inscritos.map(ev => `<li>${ev.title} - ${ev.location}</li>`).join(
 if (user.role === "visitor") {
 mostrarEventosInscrito(user.id);
 }
-cargarEventos(); 
+cargarEventos();

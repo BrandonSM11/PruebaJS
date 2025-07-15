@@ -18,9 +18,21 @@
   "events": [
     {
       "title": "Concierto al Parques",
-      "location": "Bogotá",
+      "location": "Medallo",
       "capacity": 7,
-      "id": "1"
+      "id": "1",
+      "attendees": [
+        "2"
+      ]
+    },
+    {
+      "id": "f36f",
+      "title": "brandon",
+      "location": "robledo",
+      "capacity": 1,
+      "attendees": [
+        "2"
+      ]
     }
   ]
 }
