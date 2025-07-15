@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    .register-container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+    }
+    .btn-primary {
+    background-color: #7b2cbf;
+    border-color: #7b2cbf;
+    border-radius: 12px;
+    }

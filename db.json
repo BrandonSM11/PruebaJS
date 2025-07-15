@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Brandon",
+      "email": "brandon@gmail.com",
+      "password": "brandon123",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "title": "Concierto al Parques",
+      "location": "Bogotá",
+      "capacity": 7,
+      "id": "1"
+    }
+  ]
+}
